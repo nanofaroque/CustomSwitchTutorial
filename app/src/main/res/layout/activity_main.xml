@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/default_switch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textOn="ON"
+        android:layout_centerInParent="true"
+        android:textOff="OFF"/>
+    <TextView
+        android:id="@+id/tvStateDefault"
+        android:layout_below="@+id/default_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <Switch
+        android:id="@+id/mySwitch"
+        android:layout_below="@+id/tvStateDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="ON"
+        android:thumb="@drawable/customswitchselector"
+        android:track="@drawable/custom_track"
+        android:textOff="OFF"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvState"
+        android:layout_below="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
